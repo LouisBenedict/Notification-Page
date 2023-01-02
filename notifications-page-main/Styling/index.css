@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;800&display=swap');
+
+:root {
+
+    --BodyColor: #f5eeee;
+    --MessageColor: #f7f7f7;
+    --NotificationsFont: 'Plus Jakarta Sans', sans-serif;
+    --NotificationsFont-BWeight: 800;
+    --NotificationsFont-MWeight: 500;
+    --NotificationsFont-RWeight: 400;
+}
+
+body {
+    background-color: var(--BodyColor);
+}
+
+.container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+
+    margin: auto; 
+    padding: 0.8rem 5rem;
+    border-radius: 0.5rem;
+}
+
+#head-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#notifications-bold {
+    font-family: var(--NotificationsFont);
+}
+
+#mark-read {
+    font-family: var(--NotificationsFont);
+    font-weight: var(--NotificationsFont-MWeight);
+    text-decoration: none;
+    color: rgb(32, 32, 212);
+}
+
+.notification {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.notification:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.notification-content-header > span:nth-child(1) {
+    font-family: var(--NotificationsFont);
+    font-weight: var(--NotificationsFont-BWeight);
+}
+
+.notification-content-header > span:nth-child(2) {
+    font-family: var(--NotificationsFont);
+    font-weight: var(--NotificationsFont-RWeight);
+}
+
+.notification-content-time {
+    font-family: var(--NotificationsFont);
+    font-weight: var(--NotificationsFont-RWeight);
+}
+
+.notification-content-message {
+    font-family: var(--NotificationsFont);
+    font-weight: var(--NotificationsFont-RWeight);
+    background-color: var(--MessageColor);
+    padding: 1.2rem;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+}
+
+.notification-avatar > img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+
+.attribution {
+    padding: 10px;
+    text-align: center;
+    font-family: var(--NotificationsFont);
+    font-weight: var(--NotificationsFont-MWeight);
+}
